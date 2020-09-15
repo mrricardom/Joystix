@@ -144,7 +144,7 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+> https://drive.google.com/file/d/1kI-408IzX9dA6yARfxga1MQsiGnX_k59/view?usp=sharing.
 
 <br>
 
