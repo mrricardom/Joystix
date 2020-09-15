@@ -29,6 +29,7 @@
 The **Joystix** MVP includes:
 - A viewable comprehnsive library with all games added by users
 - User authentication and login with their own videogame library
+- A Forum page for each game where comments are displayed
 - Fully functioning front-end CRUD where users could: add, see, delete, and update their videogames.
 - An image of the videogame, genre, year realeased, and rating displayed in product cards
 
@@ -36,11 +37,13 @@ The **Joystix** MVP includes:
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- Get project approved 9/15
+- Finish backend CRUD by 9/15
+- Finish frontend CRUD by 9/16
+- Complete frontend components by 9/17
+- Advanced CSS, MVP, first deployment by 9/18
+- Post MVP Goals and Finishing Touches 9/21
+- Presentation 9/22
 
 <br>
 
@@ -98,19 +101,44 @@ The **Joystix** MVP includes:
 ``` structure
 
 app
-  |__ channels
   |__ controllers
-  |__ jobs
-  |__ model
-src
-|__ assets/
-      |__ fonts
-      |__ graphics
-      |__ images
-      |__ mockups
-|__ components/
-      |__ Header.jsx
-|__ services/
+    |__ application_controller.rb
+    |__ users_controller.rb
+    |__ games_controller.rb
+    |__ comments_controller.rb
+    |__ authentication_controller.rb
+  |__ models
+    |__ game.rb
+    |__ comment.rb
+    |__ user.rb
+client
+  |__src
+    |__ components
+      |__Header.jsx
+      |__Footer.jsx
+    |__ containers
+      |__GameContainer.jsx
+    |__ layouts
+      |__Layout.jsx
+    |__ screens
+      |__Comments.jsx
+      |__GameCreate.jsx
+      |__GameDetail.jsx
+      |__GameEdit.jsx
+      |__Games.jsx
+      |__Login.jsx
+      |__Register.jsx
+    |__ services
+      |__api-config.js
+      |__auth.js
+      |__games.js
+      |__comments.js 
+   App.js
+ config
+  |__ routes.rb
+ db
+  |__ schema.rb
+  |__ seeds.rb  
 
 ```
 
