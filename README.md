@@ -20,16 +20,17 @@
 
 ## Overview
 
-_**Project Title** is lorem ipsum dolor sit amet. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
-
+_**Joystix** is an app for to the casual and hardcore video-game enthusiast. Nostalgia often hits and a user is reminded of a game they once loved. A user can sign-in and log their favorite videogames under their account. After rating them, they can see a broad picture of what games they've liked. A user could also see some of the games other users have added in the comphrhensive library. _
 
 <br>
 
 ## MVP
 
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+_The **Joystix** MVP includes:
+- _a viewable comprehnsive library with all games added by users
+- _user authentication and login with their own videogame library
+- _fully functioning front-end CRUD where users could: add, see, delete, and update their videogames._
+- _an image of the videogame, genre, year realeased, and rating displayed in product cards
 
 <br>
 
@@ -49,11 +50,10 @@ _The **Project Title** MVP lorem ipsum dolor sit amet, consectetur adipiscing el
 
 |     Library      | Description                                |
 | :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| React SemanticUI | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Express      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  Express Router  | _Lorem ipsum dolor sit amet, consectetur._ |
+|      React       | _Library used to compile front-end app._ |
+|   React Router   | _Used to make routes to shift screens in react._ |
+| Axios | _Library used to make API calls to rails backend._ |
+|     Rails      | _Backend database._ |
 
 <br>
 
@@ -147,7 +147,11 @@ src
 
 ## Post-MVP
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your Post-MVP. This will be helpful when you return to your project after graduation!
+_Some Post-MVP goals for Joystix includes:
+- _change rating on the comprehensive library to be an average of all ratings, and to be stars
+- _add market icon to link to a page where you can buy the game
+- _change the favicon
+- _add a "send to a friend" link
 
 ***
 
