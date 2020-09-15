@@ -20,7 +20,7 @@
 
 ## Overview
 
-**Joystix** is an app for to the casual and hardcore video-game enthusiast. Nostalgia often hits and a user is reminded of a game they once loved. A user can sign-in and log their favorite videogames under their account. After rating them, they can see a broad picture of what games they've liked. A user could also see some of the games other users have added in the comphrhensive library.
+**Joystix** is an app designed for to the casual through hardcore video-game enthusiast. Nostalgia often hits and a user is reminded of a game they once loved. Here, a user can sign-in and log their favorite videogames under their account. After adding them, they can see a broad picture of what games they've liked. They can then edit, add more games, or delete an entry.  A user could also see all of the games other users have added in the comprehensive library.
 
 <br>
 
@@ -97,6 +97,11 @@ The **Joystix** MVP includes:
 
 ``` structure
 
+app
+  |__ channels
+  |__ controllers
+  |__ jobs
+  |__ model
 src
 |__ assets/
       |__ fonts
@@ -148,10 +153,11 @@ src
 ## Post-MVP
 
 Some Post-MVP goals for Joystix includes:
-- change rating on the comprehensive library to be an average of all ratings, and to be stars
-- add market icon to link to a page where you can buy the game
-- change the favicon
-- add a "send to a friend" link
+- Add a feature to comprehensive library where users can add to their own library
+- Change rating on the comprehensive library to be an average of all ratings, and to be stars
+- Add market icon to link to a page where you can buy the game
+- Change the favicon to a joystick
+- Add a "send to a friend" link to entries
 
 ***
 
