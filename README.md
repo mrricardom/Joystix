@@ -160,13 +160,13 @@ client
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Project Proposal    |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Project Proposal    |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
+| Project Approval |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
+| Set Up App skeleton and dependencies |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
+| Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     2 hrs     |     TBD     |
+| Implement Auth (backend) |    H     |     1 hr      |     1 hr     |     TBD     |
+| Create Login and Register pages  |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
+| Implement Auth (frontend) |    H     |     2 hrs      |     2 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
