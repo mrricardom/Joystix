@@ -20,17 +20,17 @@
 
 ## Overview
 
-_**Joystix** is an app for to the casual and hardcore video-game enthusiast. Nostalgia often hits and a user is reminded of a game they once loved. A user can sign-in and log their favorite videogames under their account. After rating them, they can see a broad picture of what games they've liked. A user could also see some of the games other users have added in the comphrhensive library. _
+**Joystix** is an app for to the casual and hardcore video-game enthusiast. Nostalgia often hits and a user is reminded of a game they once loved. A user can sign-in and log their favorite videogames under their account. After rating them, they can see a broad picture of what games they've liked. A user could also see some of the games other users have added in the comphrhensive library.
 
 <br>
 
 ## MVP
 
-_The **Joystix** MVP includes:
-- _a viewable comprehnsive library with all games added by users
-- _user authentication and login with their own videogame library
-- _fully functioning front-end CRUD where users could: add, see, delete, and update their videogames._
-- _an image of the videogame, genre, year realeased, and rating displayed in product cards
+The **Joystix** MVP includes:
+- A viewable comprehnsive library with all games added by users
+- User authentication and login with their own videogame library
+- Fully functioning front-end CRUD where users could: add, see, delete, and update their videogames.
+- An image of the videogame, genre, year realeased, and rating displayed in product cards
 
 <br>
 
@@ -147,11 +147,11 @@ src
 
 ## Post-MVP
 
-_Some Post-MVP goals for Joystix includes:
-- _change rating on the comprehensive library to be an average of all ratings, and to be stars
-- _add market icon to link to a page where you can buy the game
-- _change the favicon
-- _add a "send to a friend" link
+Some Post-MVP goals for Joystix includes:
+- change rating on the comprehensive library to be an average of all ratings, and to be stars
+- add market icon to link to a page where you can buy the game
+- change the favicon
+- add a "send to a friend" link
 
 ***
 
