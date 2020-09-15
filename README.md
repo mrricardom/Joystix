@@ -57,6 +57,7 @@ The **Joystix** MVP includes:
 |   React Router   | _Used to make routes to shift screens in react._ |
 | Axios | _Library used to make API calls to rails backend._ |
 |     Rails      | _Backend database._ |
+|     Bcrypt      | _Dependency that allows for user authorization._ |
 
 <br>
 
@@ -96,8 +97,6 @@ The **Joystix** MVP includes:
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
-
 ``` structure
 
 app
@@ -126,6 +125,7 @@ client
       |__GameDetail.jsx
       |__GameEdit.jsx
       |__Games.jsx
+      |__GameCard.jsx
       |__Login.jsx
       |__Register.jsx
     |__ services
@@ -160,7 +160,8 @@ client
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
-| Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
+| Project Proposal    |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
