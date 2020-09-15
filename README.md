@@ -115,6 +115,7 @@ client
     |__ components
       |__Header.jsx
       |__Footer.jsx
+      |__GameCard.jsx
     |__ containers
       |__GameContainer.jsx
     |__ layouts
@@ -125,7 +126,6 @@ client
       |__GameDetail.jsx
       |__GameEdit.jsx
       |__Games.jsx
-      |__GameCard.jsx
       |__Login.jsx
       |__Register.jsx
     |__ services
@@ -148,15 +148,20 @@ client
 
 |  Component   |    Type    | state | props | Description                                                      |
 | :----------: | :--------: | :---: | :---: | :--------------------------------------------------------------- |
-|    Header    | functional |   n   |   n   | _The header will contain the navigation and logo._               |
-|  Navigation  | functional |   n   |   n   | _The navigation will provide a link to each of the pages._       |
-|   Gallery    |   class    |   y   |   n   | _The gallery will render the posts using cards in flexbox._      |
-| Gallery Card | functional |   n   |   y   | _The cards will render the post info via props._                 |
-|    Footer    | functional |   n   |   n   | _The footer will show info about me and a link to my portfolio._ |
+|    Header    | functional |   n   |   y   | _The header will contain signin/register, name of site, and logo._               |
+|  Footer  | functional |   n   |   n   | _Credentials will appear on the bottom of each page._       |
+| Layout | functional |   n   |   y   | _Holds the header, footer, and body._                 |
+|    GameCard    | functional |   y   |   y   | _Card where img, yr, genre, name, and rating appear._ |
+|   GameContainer    |   screen    |   y   |   n   | _Parent of many screens, where api calls will be made._      |
+|    Comments    | screen |   n   |   n   | _AKA Forum. Each game will display an image and comments._ |
+|    GameCreate    | screen |   y   |   y   | _Screen where you add a game to your collection._ |
+|    GameDetail    | screen |   y   |   y   | _Linked to display of just one  game card._ |
+|    GameEdit    | screen |   y   |   y   | _Scren where you can edit the game._ |
+|    Games    | functional |   y   |   n   | _A collection of the cards._ |
+|    Login    | screen |   y   |   y   | _Page where you could login. Your games displayed after._ |
+|    Register    | screen |   y   |   y   | _Register page where you can register._ |
 
 #### Time Estimates
-
-> Use this section to estimate the time necessary to build out each of the components you've described above.
 
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
@@ -181,8 +186,6 @@ client
 | Send to friend link  |    L     |     2 hrs      |     TBD     |     TBD     |
 | Debugging  |    H     |     6 hrs      |     TBD     |     TBD     |
 | TOTAL               |          |    42 hrs      |     TBD     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
