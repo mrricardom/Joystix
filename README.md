@@ -63,8 +63,6 @@ The **Joystix** MVP includes:
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 [Screens](https://whimsical.com/XA5HbecEKRmTqpHCpA8qqK)
 
 #### Component Tree
