@@ -163,6 +163,12 @@ client
 | Project Proposal    |    H     |     3 hrs      |     3 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
+| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
