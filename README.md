@@ -161,15 +161,26 @@ client
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Project Proposal    |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
-| Project Approval |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
-| Set Up App skeleton and dependencies |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
-| Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Implement Auth (backend) |    H     |     1 hr      |     1 hr     |     TBD     |
-| Create Login and Register pages  |    H     |     .5 hrs      |     .5 hrs     |     TBD     |
-| Implement Auth (frontend) |    H     |     2 hrs      |     2 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
-| TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
+| Project Approval |    H     |     .5 hrs      |     TBD     |     TBD     |
+| Set Up App skeleton and dependencies |    H     |     .5 hrs      |     TBD    |     TBD     |
+| Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     TBD     |     TBD     |
+| Implement Auth (backend) |    H     |     1 hr      |     TBD     |     TBD     |
+| Create Login and Register pages  |    H     |     .5 hrs      |     TBD     |     TBD     |
+| Implement Auth (frontend) |    H     |     2 hrs      |     TBD     |     TBD     |
+| Game services, comments services, Game Container, and screens |    H     |     5 hrs      |     TBD     |     TBD     |
+| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     TBD     |     TBD     |
+| Forum Page displaying comments  |    H     |     1 hr      |     TBD     |     TBD     |
+| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     TBD     |     TBD     |
+| CSS Flexbox  |    H     |     2 hrs      |     TBD     |     TBD     |
+| Mediaqueries  |    H     |     4 hrs      |     TBD     |     TBD     |
+| Advanced CSS  |    M     |     2.5 hrs      |     TBD     |     TBD     |
+| Averaging scores and replacing it with stars  |    L     |     1.5 hrs      |     TBD     |     TBD     |
+| Favicon  |    L     |     .5 hrs      |     TBD     |     TBD     |
+| Comprehensive Library (adding to collection)  |    L     |     2 hrs      |     TBD    |     TBD     |
+| Adding "Shopping" Link|    L     |     2 hrs      |     TBD     |     TBD     |
+| Send to friend link  |    L     |     2 hrs      |     TBD     |     TBD     |
+| Debugging  |    H     |     6 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |    42 hrs      |     TBD     |     TBD     |
 
 > _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
