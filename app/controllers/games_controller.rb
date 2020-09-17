@@ -1,4 +1,5 @@
 class GamesController < ApplicationController
+  before_action :authorize_request, only: [:create, :update, :show, :destroy]
   before_action :set_game, only: [:show, :update, :destroy]
 
   # GET /games
@@ -10,15 +11,16 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
-    render json: @game
+    render json: @game, include: :comments
   end
 
   # POST /games
   def create
     @game = Game.new(game_params)
+    @game.user = @current_user
 
     if @game.save
-      render json: @game, status: :created, location: @game
+      render json: @game, status: :created
     else
       render json: @game.errors, status: :unprocessable_entity
     end
@@ -41,7 +43,7 @@ class GamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
-      @game = Game.find(params[:id])
+      @game = @current_user.games.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
