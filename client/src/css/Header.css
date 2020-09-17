@@ -1,0 +1,27 @@
+header {
+  font-family: 'Press Start 2P', cursive;
+}
+
+img {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  top: 10px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.login-register-option {
+  position: absolute;
+  right: 0;
+  margin: 40px;
+}
+
+.site-logo {
+  display: inline;
+  margin: 50px 0px 50px 40px;
+  padding-right: 0;
+}
