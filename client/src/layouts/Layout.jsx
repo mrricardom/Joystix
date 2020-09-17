@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 export default function Layout(props) {
   return (
@@ -9,6 +10,7 @@ export default function Layout(props) {
         handleLogout={props.handleLogout}
       />
       <main>{props.children}</main>
+      <Footer />
     </div>
   )
 }
