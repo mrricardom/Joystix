@@ -7,6 +7,10 @@
   pointer-events: none;
 }
 
+.joystix-logo {
+  font-size: 30px;
+  font-family: 'Press Start 2P', cursive;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
