@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer>
       <p className='footer-p'>
-        Ricardo Martini &copy;2020 Joystick 8-bit image provided by
+        &copy; Ricardo Martini 2020 Joystick 8-bit image provided by
         pixelartmaker.com. Linkedin and Github images provided by
         icons-icons.com.
       </p>

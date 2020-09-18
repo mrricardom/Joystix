@@ -4,13 +4,13 @@ import Footer from '../components/Footer'
 
 export default function Layout(props) {
   return (
-    <div>
+    <>
       <Header
         currentUser={props.currentUser}
         handleLogout={props.handleLogout}
       />
       <main>{props.children}</main>
       <Footer />
-    </div>
+    </>
   )
 }
