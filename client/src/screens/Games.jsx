@@ -5,7 +5,7 @@ export default function Games(props) {
   const { currentUser, games, handleDelete } = props
   return (
     <div>
-      <p>Hi</p>
+      <h1>Games</h1>
     </div>
   )
 }

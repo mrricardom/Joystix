@@ -43,20 +43,24 @@ function App() {
     history.push('/')
   }
 
+  console.log(currentUser)
+
   return (
-    <Layout currentUser={currentUser} handleLogout={handleLogout}>
-      <Switch>
-        <Route path='/login'>
-          <Login loginSubmit={loginSubmit} />
-        </Route>
-        <Route path='/register'>
-          <Register registerSubmit={registerSubmit} />
-        </Route>
-        <Route path='/'>
-          <GameContainer currentUser={currentUser} />
-        </Route>
-      </Switch>
-    </Layout>
+    <div className='App'>
+      <Layout currentUser={currentUser} handleLogout={handleLogout}>
+        <Switch>
+          <Route path='/login'>
+            <Login loginSubmit={loginSubmit} />
+          </Route>
+          <Route path='/register'>
+            <Register registerSubmit={registerSubmit} />
+          </Route>
+          <Route path='/'>
+            <GameContainer currentUser={currentUser} />
+          </Route>
+        </Switch>
+      </Layout>
+    </div>
   )
 }
 

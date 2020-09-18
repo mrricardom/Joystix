@@ -1,0 +1,13 @@
+.game-container {
+  width: 300px;
+  padding: 50px;
+  margin: auto;
+  border: solid black;
+  text-align: center;
+}
+
+.card-img {
+  height: 250px;
+  width: 250px;
+  object-fit: contain;
+}
