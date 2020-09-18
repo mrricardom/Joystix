@@ -24,6 +24,23 @@
   color: white;
 }
 
+.module-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.module {
+  position: relative;
+  margin: 40% 50%;
+  width: 15rem;
+  height: 15rem;
+  background-color: #fff;
+}
+
 .App-link {
   color: #61dafb;
 }
