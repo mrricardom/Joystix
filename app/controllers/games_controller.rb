@@ -1,6 +1,6 @@
 class GamesController < ApplicationController
-  before_action :authorize_request, only: [:create, :update, :show, :destroy]
-  before_action :set_game, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :destroy]
+  before_action :set_game, only: [ :update, :destroy]
 
   # GET /games
   def index
@@ -11,6 +11,7 @@ class GamesController < ApplicationController
 
   # GET /games/1
   def show
+    @game = Game.find(params[:id])
     render json: @game, include: :comments
   end
 
@@ -43,12 +44,11 @@ class GamesController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_game
-      @game = @current_user.game.find(params[:id])
-  
+      @game = @current_user.games.find(params[:id])
     end
 
     # Only allow a trusted parameter "white list" through.
     def game_params
-      params.require(:game).permit(:name, :genre, :img_url, :yr, :rating, :user_id)
+      params.require(:game).permit(:name, :genre, :img_url, :yr, :rating)
     end
 end
