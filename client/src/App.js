@@ -7,6 +7,9 @@ import {
   verifyUser,
   removeToken,
 } from './services/auth'
+import Login from './screens/Login'
+import Register from './screens/Register'
+import GameContainer from './containers/GameContainer'
 import './App.css'
 
 function App() {
@@ -40,7 +43,21 @@ function App() {
     history.push('/')
   }
 
-  return <Layout currentUser={currentUser} handleLogout={handleLogout}></Layout>
+  return (
+    <Layout currentUser={currentUser} handleLogout={handleLogout}>
+      <Switch>
+        <Route path='/login'>
+          <Login loginSubmit={loginSubmit} />
+        </Route>
+        <Route path='/register'>
+          <Register registerSubmit={registerSubmit} />
+        </Route>
+        <Route path='/'>
+          <GameContainer currentUser={currentUser} />
+        </Route>
+      </Switch>
+    </Layout>
+  )
 }
 
 export default App
