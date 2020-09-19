@@ -47,7 +47,7 @@ export default function Games(props) {
                 )}
               </React.Fragment>
             ))}
-          <Link to='/games/new'>New Game</Link>
+          <Link to='/games/new'>Add a Game</Link>
         </div>
       ) : (
         <div>
