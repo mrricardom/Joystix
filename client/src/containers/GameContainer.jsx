@@ -11,6 +11,7 @@ import GameCard from '../components/GameCard'
 import GameDetail from '../screens/GameDetail'
 import GameCreate from '../screens/GameCreate'
 import GameEdit from '../screens/GameEdit'
+import HomeScreen from '../screens/HomeScreen'
 import Games from '../screens/Games'
 
 export default function GameContainer(props) {
@@ -75,6 +76,9 @@ export default function GameContainer(props) {
         />
       </Route>
       <Route path='/'>
+        <HomeScreen games={games} />
+      </Route>
+      <Route path='/mygames'>
         <Games
           games={games}
           handleDelete={handleDelete}
