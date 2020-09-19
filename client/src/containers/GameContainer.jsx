@@ -12,7 +12,6 @@ import GameDetail from '../screens/GameDetail'
 import GameCreate from '../screens/GameCreate'
 import GameEdit from '../screens/GameEdit'
 import Games from '../screens/Games'
-import { postComment } from '../services/comments'
 
 export default function GameContainer(props) {
   const [games, setGames] = useState([])
@@ -48,11 +47,6 @@ export default function GameContainer(props) {
     history.push('/')
   }
 
-  const createCommentSubmit = async (formData) => {
-    const newComment = await postComment(formData)
-    setGames((prevState) => [...prevState, newComment])
-  }
-
   const handleDelete = async (id) => {
     await deleteGame(id)
     setGames((prevState) => prevState.filter((game) => game.id !== id))
@@ -76,7 +70,6 @@ export default function GameContainer(props) {
           currentUser={currentUser}
           handleDelete={handleDelete}
           confirmDelete={confirmDelete}
-          createCommentSubmit={createCommentSubmit}
           isDelete={isDelete}
           isToggled={isToggled}
         />

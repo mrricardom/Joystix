@@ -7,7 +7,7 @@ import Comments from '../components/Comments'
 export default function GameDetail(props) {
   const [game, setGame] = useState([])
   const { id } = useParams()
-  const { handleDelete, currentUser, createCommentSubmit } = props
+  const { handleDelete, currentUser } = props
 
   useEffect(() => {
     const fetchGame = async () => {
@@ -24,11 +24,7 @@ export default function GameDetail(props) {
         currentUser={currentUser}
         handleDelete={handleDelete}
       />
-      <Comments
-        id={id}
-        createCommentSubmit={createCommentSubmit}
-        currentUser={currentUser}
-      />
+      <Comments id={id} currentUser={currentUser} />
     </>
   )
 }

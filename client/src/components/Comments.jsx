@@ -1,16 +1,20 @@
 import React, { useState, useEffect } from 'react'
-import { getAllComments } from '../services/comments'
+import { getAllComments, postComment } from '../services/comments'
 
 export default function Comments(props) {
   const [comments, setComments] = useState([])
-  const { id, createCommentSubmit, currentUser } = props
+  const { id, currentUser } = props
   const [formComment, setFormComment] = useState({
     content: '',
     game_id: id,
-    user_id: currentUser.id,
+    user_id: 1,
   })
   const { comment } = formComment
 
+  const createCommentSubmit = async (formData) => {
+    const newComment = await postComment(formData)
+    setComments((prevState) => [...prevState, newComment])
+  }
   console.log(currentUser)
 
   useEffect(() => {
@@ -21,6 +25,7 @@ export default function Comments(props) {
     }
     fetchComments()
   }, [])
+
   console.log(formComment)
   console.log(id)
 
