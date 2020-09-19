@@ -7,7 +7,7 @@ export default function Comments(props) {
   const [formComment, setFormComment] = useState({
     content: '',
     game_id: id,
-    user_id: currentUser.id,
+    user_id: '',
   })
   const { comment } = formComment
 
@@ -32,6 +32,7 @@ export default function Comments(props) {
   const handleChange = (e) => {
     const { name, value } = e.target
     const newComment = { [name]: value }
+    formComment.user_id = currentUser.id
     setFormComment((formComment) => {
       return { ...formComment, ...newComment }
     })
