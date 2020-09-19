@@ -57,7 +57,51 @@ export default function Comments(props) {
     //   </div>
     // )
     <div>
-      <h3>Add a comment</h3>
+      {comments ? (
+        <div>
+          <h1>Message Board</h1>
+          {comments
+            .filter((comment) => comment.game_id === Number(id))
+            .map((comment) => (
+              <div>
+                <h2>{comment.content}</h2>
+              </div>
+            ))}
+        </div>
+      ) : (
+        <div>
+          <h1>Be the first to Comment!</h1>
+        </div>
+      )}
+
+      {currentUser ? (
+        <div>
+          <h3>Add a comment</h3>
+          <form
+            onSubmit={(e) => {
+              e.preventDefault()
+              createCommentSubmit(formComment)
+            }}
+          >
+            <label>
+              <input
+                type='textfield'
+                name='content'
+                placeholder='Comment'
+                value={comment}
+                onChange={handleChange}
+              />
+            </label>
+            <button>Submit</button>
+          </form>
+        </div>
+      ) : (
+        <></>
+      )}
+    </div>
+  )
+}
+/* <h3>Add a comment</h3>
       <form
         onSubmit={(e) => {
           e.preventDefault()
@@ -92,8 +136,7 @@ export default function Comments(props) {
         </div>
       )}
     </div>
-  )
-}
+  ) */
 //   <div>
 //     <div>
 //       {comments.filter((comment) =>

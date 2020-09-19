@@ -27,7 +27,7 @@ export default function GameCreate(props) {
         onSubmit={(e) => {
           e.preventDefault()
           createSubmit(formData)
-          history.push('/')
+          history.push('/mygames')
         }}
       >
         <h1> New Game </h1>

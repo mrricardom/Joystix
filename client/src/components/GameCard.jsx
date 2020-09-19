@@ -3,7 +3,14 @@ import { Link, useHistory } from 'react-router-dom'
 import '../css/GameCard.css'
 
 export default function GameCard(props) {
-  const { game, handleDelete, currentUser } = props
+  const {
+    game,
+    handleDelete,
+    currentUser,
+    confirmDelete,
+    isToggled,
+    isDelete,
+  } = props
   const history = useHistory()
 
   console.log(currentUser)
@@ -16,20 +23,30 @@ export default function GameCard(props) {
         <p>Title: {game.name}</p>
         <p>Year: {game.yr}</p>
         <p>Genre: {game.genre}</p>
+
         {currentUser && currentUser.id === game.user_id && (
-          <>
-            <Link to='/games/:id/edit'>
+          <div>
+            <Link to={`/games/${game.id}/edit`}>
               <button>Edit</button>
             </Link>
-            <button
-              onClick={() => {
-                handleDelete(game.id)
-                history.push('/')
-              }}
-            >
-              Delete
-            </button>
-          </>
+            <button onClick={confirmDelete}>Delete</button>
+            {isToggled && (
+              <div className='module-background'>
+                <div className='module'>
+                  <p>Are you sure you want to delete this game?</p>
+                  <button onClick={confirmDelete}>Cancel</button>
+                  <button
+                    onClick={() => {
+                      handleDelete(game.id)
+                      confirmDelete()
+                    }}
+                  >
+                    Delete
+                  </button>
+                </div>
+              </div>
+            )}
+          </div>
         )}
       </div>
     </div>

@@ -17,6 +17,7 @@ export default function Games(props) {
     <div>
       {currentUser ? (
         <div>
+          <h1>My Games</h1>
           {games
             .filter((game) => currentUser.id === game.user_id)
             .map((game) => (
@@ -31,7 +32,7 @@ export default function Games(props) {
                 {isToggled && (
                   <div className='module-background'>
                     <div className='module'>
-                      <p>This is Module</p>
+                      <p>Are you sure you want to delete this game?</p>
                       <button onClick={confirmDelete}>Cancel</button>
                       <button
                         onClick={() => {
