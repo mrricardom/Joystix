@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-
+  before_action :authorize_request, only: :create
   # GET /comments
   def index
     @comments = Comment.all
