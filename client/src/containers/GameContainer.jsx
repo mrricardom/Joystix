@@ -45,7 +45,7 @@ export default function GameContainer(props) {
   const createSubmit = async (formData) => {
     const newGame = await postGame(formData)
     setGames((prevState) => [...prevState, newGame])
-    history.push('/')
+    history.push('/mygames')
   }
 
   const handleDelete = async (id) => {
@@ -69,6 +69,7 @@ export default function GameContainer(props) {
       <Route path='/games/:id'>
         <GameDetail
           currentUser={currentUser}
+          updateSubmit={updateSubmit}
           handleDelete={handleDelete}
           confirmDelete={confirmDelete}
           isDelete={isDelete}
