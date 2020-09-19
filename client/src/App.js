@@ -9,6 +9,7 @@ import {
 } from './services/auth'
 import Login from './screens/Login'
 import Register from './screens/Register'
+import HomeScreen from './screens/HomeScreen'
 import GameContainer from './containers/GameContainer'
 import './App.css'
 
@@ -27,13 +28,13 @@ function App() {
   const loginSubmit = async (loginData) => {
     const userData = await loginUser(loginData)
     setCurrentUser(userData)
-    history.push('/')
+    history.push('/mygames')
   }
 
   const registerSubmit = async (registerData) => {
     const userData = await registerUser(registerData)
     setCurrentUser(userData)
-    history.push('/')
+    history.push('/mygames')
   }
 
   const handleLogout = () => {
@@ -56,6 +57,9 @@ function App() {
             <Register registerSubmit={registerSubmit} />
           </Route>
           <Route path='/'>
+            <HomeScreen />
+          </Route>
+          <Route path='/mygames'>
             <GameContainer currentUser={currentUser} />
           </Route>
         </Switch>
