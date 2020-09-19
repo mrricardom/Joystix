@@ -75,9 +75,6 @@ export default function GameContainer(props) {
           isToggled={isToggled}
         />
       </Route>
-      <Route path='/'>
-        <HomeScreen games={games} />
-      </Route>
       <Route path='/mygames'>
         <Games
           games={games}
@@ -87,6 +84,9 @@ export default function GameContainer(props) {
           isToggled={isToggled}
           currentUser={currentUser}
         />
+      </Route>
+      <Route path='/'>
+        <HomeScreen games={games} />
       </Route>
     </Switch>
   )

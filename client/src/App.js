@@ -57,9 +57,6 @@ function App() {
             <Register registerSubmit={registerSubmit} />
           </Route>
           <Route path='/'>
-            <HomeScreen />
-          </Route>
-          <Route path='/mygames'>
             <GameContainer currentUser={currentUser} />
           </Route>
         </Switch>

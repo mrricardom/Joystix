@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Mario from '../images/Mario.png'
 
 export default function Games(props) {
   const {
@@ -49,14 +50,12 @@ export default function Games(props) {
         </div>
       ) : (
         <div>
-          <h1>Arcade</h1>
-          {games.map((game) => (
-            <React.Fragment key={game.id}>
-              <Link to={`/games/${game.id}`}>
-                <p> {game.name}</p>
-              </Link>
-            </React.Fragment>
-          ))}
+          <img src={Mario} alt='8 bit-Mario' />
+          <h1>
+            {' '}
+            Sorry, your games are in another castle! Please Log in to see your
+            Games.
+          </h1>
         </div>
       )}
     </div>
