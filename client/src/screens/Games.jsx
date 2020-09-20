@@ -1,6 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import Mario from '../images/Mario.png'
+import GameCard from '../components/GameCard'
+import '../css/Games.css'
 
 export default function Games(props) {
   const {
@@ -17,14 +19,18 @@ export default function Games(props) {
     <div>
       {currentUser ? (
         <div>
-          <h1>My Games</h1>
+          <h1 className='my-games-title'>My Games</h1>
           {games
             .filter((game) => currentUser.id === game.user_id)
             .map((game) => (
               <React.Fragment key={game.id}>
-                <Link to={`/games/${game.id}`}>
-                  <p> {game.name}</p>
-                </Link>
+                <img src={game.img_url} />
+                <p>
+                  Title: <Link to={`/games/${game.id}`}>{game.name}</Link>
+                </p>
+                <p> Year: {game.yr} </p>
+                <p>Genre: {game.genre}</p>
+                <p> Rating: {game.rating}</p>
                 <Link to={`/games/${game.id}/edit`}>
                   <button>Edit</button>
                 </Link>
@@ -52,9 +58,8 @@ export default function Games(props) {
       ) : (
         <div>
           <img src={Mario} alt='8 bit-Mario' />
-          <h1>
-            {' '}
-            Sorry, your games are in another castle! Please Log in to see your
+          <h1 className='sorry-text'>
+            Sorry, your games are in another castle! Please log in to see your
             Games.
           </h1>
         </div>
