@@ -1,3 +1,15 @@
+label {
+  font-family: 'Roboto Mono', monospace;
+}
+
+.register-logo {
+  font-family: 'Press Start 2P', cursive;
+}
+
+.app-description {
+  font-family: 'Roboto Mono', monospace;
+}
+
 .register-button {
   background-color: #00914c;
   color: white;

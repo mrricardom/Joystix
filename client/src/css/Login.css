@@ -1,4 +1,37 @@
+.login-container {
+  width: 500px;
+  margin: 160px auto 200px auto;
+}
+
+.login-form {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+.login-logo {
+  font-family: 'Press Start 2P', cursive;
+  margin: 0 130px 20px 0px;
+}
+
 .login-submit {
   background-color: #00914c;
+  height: 30px;
+  width: 100px;
+  margin: 0 0 0 50px;
+  font-size: 18px;
   color: white;
+}
+
+.login-label {
+  margin: 10px 0 15px 80px;
+  font-size: 18px;
+}
+
+.input-login {
+  margin: 0 0 0 50px;
+}
+
+.register-link {
+  margin: 10px 0px 30px 60px;
 }

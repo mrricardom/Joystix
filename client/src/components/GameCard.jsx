@@ -25,7 +25,7 @@ export default function GameCard(props) {
         <p>Genre: {game.genre}</p>
 
         {currentUser && currentUser.id === game.user_id && (
-          <div>
+          <div className='card-buttons'>
             <Link to={`/games/${game.id}/edit`}>
               <button className='card-edit'>Edit</button>
             </Link>

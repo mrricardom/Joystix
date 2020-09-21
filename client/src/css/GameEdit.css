@@ -1,6 +1,6 @@
 .edit-form-container {
-  width: 356px;
-  height: 506px;
+  width: 320px;
+  height: 520px;
   padding: 10px 15px 25px;
   margin: 0 auto;
   border: solid black;
@@ -33,23 +33,23 @@
 }
 
 .rating-edit {
-  margin: 0px 0px 16px 42px;
+  margin: 0px 0px 16px 40px;
 }
 
 .title-edit {
-  margin: 0px 0px 16px 57px;
+  margin: 0px 0px 16px 49px;
 }
 
 .yr-edit {
-  margin: 0px 0px 16px 57px;
+  margin: 0px 0px 16px 59px;
 }
 
 .genre-edit {
-  margin: 0px 0px 16px 45px;
+  margin: 0px 0px 16px 50px;
 }
 
 .edit-submit {
-  margin: 0 auto 0 115px;
+  margin: 0px auto 0 90px;
   font-size: 16px;
   background-color: #00914c;
   color: white;

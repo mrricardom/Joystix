@@ -1,7 +1,7 @@
 .game-container {
   width: 250px;
   padding: 50px;
-  height: 400px;
+  height: 450px;
   margin: 0 auto;
   border: solid black;
   text-align: center;
@@ -16,9 +16,14 @@
 .card-delete {
   background-color: #dd0116;
   color: white;
+  font-size: 16px;
+  margin: 10px 0px 30px 40px;
 }
 
 .card-edit {
   background-color: #f9be00;
   color: white;
+  width: 70px;
+  font-size: 16px;
+  margin: 10px 40px 30px 0px;
 }

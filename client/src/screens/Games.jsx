@@ -19,7 +19,7 @@ export default function Games(props) {
     <div>
       {currentUser ? (
         <div>
-          <h1 className='my-games-title'>My Games</h1>
+          <h2 className='my-games-title'>My Games</h2>
           {games
             .filter((game) => currentUser.id === game.user_id)
             .map((game) => (
