@@ -9,13 +9,16 @@
 .games-edit-button {
   background-color: #f9be00;
   color: white;
+  border-radius: 40px;
 }
 
 .games-cancel-button {
   background-color: #f9be00;
   color: white;
+  border-radius: 40px;
 }
 .games-delete-button {
   background-color: #dd0116;
   color: white;
+  border-radius: 40px;
 }

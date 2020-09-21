@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { getAllComments, postComment } from '../services/comments'
+import '../css/Comments.css'
 
 export default function Comments(props) {
   const [comments, setComments] = useState([])
@@ -39,34 +40,18 @@ export default function Comments(props) {
   }
 
   return (
-    //   <div>
-    //     {comments ? (
-    //       <div>
-    //         {comments
-    //           .filter((comment) => comment.game_id === Number(id))
-    //           .map((comment) => (
-    //             <div>
-    //               <h2> {comment.content}</h2>
-    //             </div>
-    //           ))}
-    //       </div>
-    //     ) : (
-    //       <div>
-    //         <h1>Be the first to Comment!</h1>
-    //       </div>
-    //     )}
-    //   </div>
-    // )
-    <div>
+    <div className='comment-container'>
       {comments ? (
-        <div>
-          <h1>Message Board</h1>
+        <div className='messageboard'>
+          <h2 className='messageboard-logo'>Message Board</h2>
           {comments
             .filter((comment) => comment.game_id === Number(id))
             .map((comment) => (
-              <div>
-                <h2>{comment.content}</h2>
-              </div>
+              <>
+                <ul>
+                  <li className='comments'>{comment.content}</li>
+                </ul>
+              </>
             ))}
         </div>
       ) : (
@@ -76,24 +61,25 @@ export default function Comments(props) {
       )}
 
       {currentUser ? (
-        <div>
-          <h3>Add a comment</h3>
+        <div className='comment-add-container'>
+          <h4 className='add-comment'>Add a comment</h4>
           <form
             onSubmit={(e) => {
               e.preventDefault()
               createCommentSubmit(formComment)
             }}
           >
-            <label>
-              <input
-                type='textfield'
+            <label className='comment-form'>
+              <textarea
+                type='textarea'
                 name='content'
+                className='comment-type'
                 placeholder='Comment'
                 value={comment}
                 onChange={handleChange}
               />
             </label>
-            <button>Submit</button>
+            <button className='comment-submit'>Submit</button>
           </form>
         </div>
       ) : (
@@ -102,59 +88,3 @@ export default function Comments(props) {
     </div>
   )
 }
-/* <h3>Add a comment</h3>
-      <form
-        onSubmit={(e) => {
-          e.preventDefault()
-          createCommentSubmit(formComment)
-        }}
-      >
-        <label>
-          <input
-            type='textfield'
-            name='content'
-            placeholder='Comment'
-            value={comment}
-            onChange={handleChange}
-          />
-        </label>
-        <button>Submit</button>
-      </form>
-
-      {comments ? (
-        <div>
-          {comments
-            .filter((comment) => comment.game_id === Number(id))
-            .map((comment) => (
-              <div>
-                <h2>{comment.content}</h2>
-              </div>
-            ))}
-        </div>
-      ) : (
-        <div>
-          <h1>Be the first to Comment!</h1>
-        </div>
-      )}
-    </div>
-  ) */
-//   <div>
-//     <div>
-//       {comments.filter((comment) =>
-//         comment.game_id === Number(id) ? (
-//           <div>
-//             {comments.map((comment) => (
-//               <div>
-//                 <h2> {comment.content}</h2>
-//               </div>
-//             ))}
-//           </div>
-//         ) : (
-//           <div>
-//             <h1>Be the first to Comment!</h1>
-//           </div>
-//         )
-//       )}
-//     </div>
-//   </div>
-// )

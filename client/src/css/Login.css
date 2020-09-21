@@ -1,25 +1,27 @@
 .login-container {
   width: 500px;
-  margin: 160px auto 200px auto;
+  margin: 0 auto;
 }
 
 .login-form {
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin: 160px 0 200px 0;
 }
 
 .login-logo {
   font-family: 'Press Start 2P', cursive;
-  margin: 0 130px 20px 0px;
+  margin: 0 130px 20px 20px;
 }
 
 .login-submit {
   background-color: #00914c;
   height: 30px;
   width: 100px;
-  margin: 0 0 0 50px;
-  font-size: 18px;
+  border-radius: 40px;
+  margin: 0 0 0 60px;
+  font-size: 16px;
   color: white;
 }
 
