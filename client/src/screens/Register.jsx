@@ -34,13 +34,14 @@ export default function Register(props) {
           props.registerSubmit(formData)
         }}
       >
-        <h1>Register</h1>
+        <h2 className='register-logo'>Register</h2>
         <label>
           Email:
           <input
             type='text'
             name='email'
             placeholder='Email'
+            autoFocus
             value={email}
             onChange={handleChange}
           />

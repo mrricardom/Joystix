@@ -11,7 +11,7 @@ export default function HomeScreen(props) {
 
   return (
     <div>
-      <h1 className='arcade-title'>Arcade</h1>
+      <h2 className='arcade-title'>Arcade</h2>
       {games.map((game) => (
         <React.Fragment key={game.id}>
           <img src={game.img_url}></img>
