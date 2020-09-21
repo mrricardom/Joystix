@@ -5,11 +5,19 @@
 .arcade-button {
   background-color: #1f53b8;
   color: white;
+  margin: 0 100px 0 15px;
   border-radius: 40px;
+  width: 75px;
 }
 
 .mygames-button {
   background-color: #1f53b8;
   color: white;
   border-radius: 40px;
+  margin: 0 0 0 103px;
+}
+
+.top-buttons {
+  width: 385px;
+  margin: 0 auto;
 }
