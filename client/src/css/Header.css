@@ -46,5 +46,6 @@ h1.site-logo {
   font-size: 12px;
   margin: 0 10px 11px 0;
   background-color: #dd0116;
+  border-radius: 40px;
   color: white;
 }

@@ -1,9 +1,8 @@
 footer {
-  font-family: 'Press Start 2P', cursive;
   position: relative;
   bottom: 0;
   text-align: center;
-  margin: 50px 150px 20px 150px;
+  margin: 20px 150px 10px 150px;
 }
 
 .footer-p {
@@ -11,6 +10,7 @@ footer {
   color: black;
   font-size: 10px;
   margin: 0px;
+  font-family: 'Press Start 2P', cursive;
 }
 
 .footer-img img {

@@ -6,7 +6,7 @@ import '../css/Layout.css'
 
 export default function Layout(props) {
   return (
-    <>
+    <div className='app-body'>
       <Header
         currentUser={props.currentUser}
         handleLogout={props.handleLogout}
@@ -19,8 +19,8 @@ export default function Layout(props) {
           <button className='mygames-button'>My Games</button>
         </Link>
         {props.children}
+        <Footer />
       </main>
-      <Footer />
-    </>
+    </div>
   )
 }

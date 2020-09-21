@@ -18,7 +18,7 @@ export default function Register(props) {
   }
 
   return (
-    <div>
+    <div className='register-container'>
       <p className='app-description'>
         <strong>Joystix</strong> is an app designed for to the casual through
         hardcore video-game enthusiast. Nostalgia often hits and a user is
@@ -29,39 +29,43 @@ export default function Register(props) {
         games other users have added in the comprehensive library
       </p>
       <form
+        className='register-form'
         onSubmit={(e) => {
           e.preventDefault()
           props.registerSubmit(formData)
         }}
       >
         <h2 className='register-logo'>Register</h2>
-        <label>
+        <label className='register-label'>
           Email:
           <input
             type='text'
             name='email'
             placeholder='Email'
             autoFocus
+            className='email-input'
             value={email}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='register-label'>
           Username:
           <input
             type='text'
             name='username'
             placeholder='Username'
+            className='register-input'
             value={username}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='register-label'>
           Password:
           <input
             type='password'
             name='password'
             placeholder='Password'
+            className='register-input'
             value={password}
             onChange={handleChange}
           />

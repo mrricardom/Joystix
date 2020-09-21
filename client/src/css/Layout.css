@@ -1,9 +1,15 @@
+.app-body {
+  height: 100vh;
+}
+
 .arcade-button {
   background-color: #1f53b8;
   color: white;
+  border-radius: 40px;
 }
 
 .mygames-button {
   background-color: #1f53b8;
   color: white;
+  border-radius: 40px;
 }
