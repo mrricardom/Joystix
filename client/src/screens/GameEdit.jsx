@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import { getOneGame } from '../services/games'
+import '../css/GameEdit.css'
 
 export default function GameEdit(props) {
   const [formData, setFormData] = useState({
@@ -50,21 +51,28 @@ export default function GameEdit(props) {
   }
 
   return (
-    <div>
-      <img src={game.img_url} alt='Title of game you selected' />
+    <div className='edit-form-container'>
+      <h4>Edit Game</h4>
+      <img
+        src={game.img_url}
+        className='edit-img'
+        alt='Image of game you selected'
+      />
       <form
         onSubmit={(e) => {
           e.preventDefault()
           updateSubmit(id, formData)
           history.push('/mygames')
         }}
+        className='edit-form'
       >
-        <h3>Edit Game</h3>
         <label>
           Image URL:
           <input
             type='text'
             name='img_url'
+            className='img-url-edit'
+            autoFocus
             value={img_url}
             onChange={handleChange}
           />
@@ -75,27 +83,41 @@ export default function GameEdit(props) {
             type='text'
             name='rating'
             value={rating}
+            className='rating-edit'
             onChange={handleChange}
           />
         </label>
         <label>
           Title:
-          <input type='text' name='name' value={name} onChange={handleChange} />
+          <input
+            type='text'
+            name='name'
+            value={name}
+            className='title-edit'
+            onChange={handleChange}
+          />
         </label>
         <label>
           Year:
-          <input type='text' name='yr' value={yr} onChange={handleChange} />
+          <input
+            type='text'
+            name='yr'
+            value={yr}
+            className='yr-edit'
+            onChange={handleChange}
+          />
         </label>
         <label>
           Genre:
           <input
             type='text'
             name='genre'
+            className='genre-edit'
             value={genre}
             onChange={handleChange}
           />
         </label>
-        <button>Submit</button>
+        <button className='edit-submit'>Submit</button>
       </form>
     </div>
   )

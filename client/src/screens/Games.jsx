@@ -32,15 +32,23 @@ export default function Games(props) {
                 <p>Genre: {game.genre}</p>
                 <p> Rating: {game.rating}</p>
                 <Link to={`/games/${game.id}/edit`}>
-                  <button>Edit</button>
+                  <button className='games-edit-button'>Edit</button>
                 </Link>
-                <button onClick={confirmDelete}>Delete</button>
+                <button className='games-delete-button' onClick={confirmDelete}>
+                  Delete
+                </button>
                 {isToggled && (
                   <div className='module-background'>
                     <div className='module'>
                       <p>Are you sure you want to delete this game?</p>
-                      <button onClick={confirmDelete}>Cancel</button>
                       <button
+                        className='games-cancel-button'
+                        onClick={confirmDelete}
+                      >
+                        Cancel
+                      </button>
+                      <button
+                        className='games-delete-button'
                         onClick={() => {
                           handleDelete(game.id)
                           confirmDelete()

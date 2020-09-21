@@ -42,4 +42,6 @@ h1.site-logo {
 .header-button {
   font-size: 12px;
   margin: 0 10px 11px 0;
+  background-color: #dd0116;
+  color: white;
 }
