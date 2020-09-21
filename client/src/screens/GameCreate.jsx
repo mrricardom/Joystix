@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { useHistory } from 'react-router-dom'
+import '../css/GameCreate.css'
 
 export default function GameCreate(props) {
   const [formData, setFormData] = useState({
@@ -81,7 +82,7 @@ export default function GameCreate(props) {
             onChange={handleChange}
           />
         </label>
-        <button>Submit</button>
+        <button className='newgame-submit'>Submit</button>
       </form>
     </div>
   )

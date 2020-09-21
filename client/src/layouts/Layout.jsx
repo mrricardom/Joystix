@@ -2,6 +2,7 @@ import React from 'react'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 import { Link } from 'react-router-dom'
+import '../css/Layout.css'
 
 export default function Layout(props) {
   return (
@@ -12,10 +13,10 @@ export default function Layout(props) {
       />
       <main>
         <Link to='/'>
-          <button>Arcade</button>
+          <button className='arcade-button'>Arcade</button>
         </Link>
         <Link to='/mygames'>
-          <button>My Games</button>
+          <button className='mygames-button'>My Games</button>
         </Link>
         {props.children}
       </main>

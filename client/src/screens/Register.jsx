@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import '../css/Register.css'
 
 export default function Register(props) {
   const [formData, setFormData] = useState({
@@ -64,7 +65,7 @@ export default function Register(props) {
             onChange={handleChange}
           />
         </label>
-        <button>Register</button>
+        <button className='register-button'>Register</button>
       </form>
     </div>
   )

@@ -1,7 +1,8 @@
 .game-container {
-  width: 300px;
+  width: 250px;
   padding: 50px;
-  margin: auto;
+  height: 400px;
+  margin: 0 auto;
   border: solid black;
   text-align: center;
 }
@@ -10,4 +11,14 @@
   height: 250px;
   width: 250px;
   object-fit: contain;
+}
+
+.card-delete {
+  background-color: #dd0116;
+  color: white;
+}
+
+.card-edit {
+  background-color: #f9be00;
+  color: white;
 }

@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import '../css/Login.css'
 
 export default function Login(props) {
   const [formData, setFormData] = useState({
@@ -46,7 +47,7 @@ export default function Login(props) {
           />
         </label>
         <Link to='/register'>Not a member? Join Us!</Link>
-        <button>Log In</button>
+        <button className='login-submit'>Log In</button>
       </form>
     </>
   )
