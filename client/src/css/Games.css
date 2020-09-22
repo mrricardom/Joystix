@@ -6,19 +6,70 @@
   font-family: 'Press Start 2P', cursive;
 }
 
+.mygames-arcade-body {
+  margin: 0 auto 10px auto;
+  width: 975px;
+}
+
 .games-edit-button {
   background-color: #f9be00;
   color: white;
+  font-size: 16px;
+  width: 75px;
   border-radius: 40px;
 }
 
 .games-cancel-button {
   background-color: #f9be00;
   color: white;
+  font-size: 16px;
   border-radius: 40px;
 }
+
 .games-delete-button {
-  background-color: #dd0116;
   color: white;
+  background-color: red;
   border-radius: 40px;
+  font-size: 16px;
+}
+
+.oneGame {
+  width: 275px;
+  border: solid black;
+  text-align: center;
+  margin: 10px 20px 10px 20px;
+}
+
+.my-games {
+  width: 970px;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.mygame-img {
+  width: 150px;
+  height: 180px;
+  margin: 20px 0 0 0;
+  object-fit: fill;
+}
+
+.add-button {
+  margin: 50px 410px 60px 410px;
+  width: 200px;
+}
+
+.add-button-inner {
+  background-color: #00914c;
+  height: 40px;
+  width: 150px;
+  border-radius: 40px;
+  font-size: 16px;
+  color: white;
+}
+
+.games-buttons {
+  position: relative;
+  bottom: 0;
 }
