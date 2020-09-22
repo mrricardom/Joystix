@@ -21,3 +21,21 @@
   width: 385px;
   margin: 0 auto;
 }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .top-buttons {
+    width: 812px;
+    margin: 0 auto;
+  }
+
+  .mygames-button {
+    margin: 0 0 0 150px;
+    font-size: 20px;
+  }
+
+  .arcade-button {
+    margin: 0 160px 0 177px;
+    width: 120px;
+    font-size: 20px;
+  }
+}

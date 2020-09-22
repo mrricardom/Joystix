@@ -66,7 +66,7 @@ export default function GameEdit(props) {
         }}
         className='edit-form'
       >
-        <label>
+        <label className='edit-label'>
           Image URL:
           <input
             type='text'
@@ -77,7 +77,7 @@ export default function GameEdit(props) {
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='edit-label'>
           Rating:
           <input
             type='text'
@@ -87,7 +87,7 @@ export default function GameEdit(props) {
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='edit-label'>
           Title:
           <input
             type='text'
@@ -97,7 +97,7 @@ export default function GameEdit(props) {
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='edit-label'>
           Year:
           <input
             type='text'
@@ -107,7 +107,7 @@ export default function GameEdit(props) {
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='edit-label'>
           Genre:
           <input
             type='text'

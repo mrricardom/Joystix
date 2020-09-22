@@ -9,7 +9,6 @@ import {
 } from './services/auth'
 import Login from './screens/Login'
 import Register from './screens/Register'
-import HomeScreen from './screens/HomeScreen'
 import GameContainer from './containers/GameContainer'
 import './App.css'
 

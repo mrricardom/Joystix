@@ -39,6 +39,7 @@ h1.site-logo {
   display: inline-block;
   margin: 55px 15px 60px 15px;
   font-size: 18px;
+  background-color: #cbcdcf;
   font-family: 'Press Start 2P', cursive;
 }
 
@@ -48,4 +49,35 @@ h1.site-logo {
   background-color: #dd0116;
   border-radius: 40px;
   color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  h1.site-logo {
+    font-size: 40px;
+    margin-left: 60px;
+  }
+
+  .header-img {
+    top: 40px;
+  }
+
+  .login-register-option {
+    position: fixed;
+    top: 5px;
+    right: 0;
+  }
+
+  a.login-register-option {
+    margin-top: 50px;
+    margin-right: 20px;
+  }
+
+  .header-p {
+    background-color: #64579c;
+    font-size: 20px;
+  }
+
+  .header-button {
+    font-size: 18px;
+  }
 }

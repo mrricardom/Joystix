@@ -1,5 +1,6 @@
 .games-link a {
   text-decoration: none;
+  background-color: #fffafa;
 }
 
 .my-games-title {
@@ -21,8 +22,6 @@
   color: white;
   font-size: 16px;
   width: 75px;
-  /* bottom: 0;
-  position: relative; */
   margin: 0 85px 15px 0;
   border-radius: 40px;
 }
@@ -44,6 +43,7 @@
 .oneGame {
   width: 275px;
   border: solid black;
+  background-color: #fffafa;
   text-align: center;
   margin: 10px 20px 10px 20px;
 }
@@ -80,6 +80,7 @@
 .games-buttons {
   position: relative;
   bottom: 0;
+  background-color: #fffafa;
 }
 
 .sorry-page {
@@ -87,6 +88,25 @@
   margin: 40px auto;
 }
 
-.module-background {
-  background-color: grey;
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .sorry-page {
+    font: 20px;
+  }
+
+  .my-games {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .my-games-title {
+    margin: 20px 0 20px 40px;
+  }
+
+  .add-button-inner {
+    font-size: 18px;
+  }
+
+  .add-button {
+    margin-left: 255px;
+  }
 }
