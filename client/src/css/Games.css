@@ -1,12 +1,17 @@
+.games-link a {
+  text-decoration: none;
+}
+
 .my-games-title {
   font-family: 'Press Start 2P', cursive;
+  margin: 10px 0 30px 10px;
 }
 
 .sorry-text {
   font-family: 'Press Start 2P', cursive;
 }
 
-.mygames-arcade-body {
+.mygames-body {
   margin: 0 auto 10px auto;
   width: 975px;
 }
@@ -16,6 +21,9 @@
   color: white;
   font-size: 16px;
   width: 75px;
+  /* bottom: 0;
+  position: relative; */
+  margin: 0 85px 15px 0;
   border-radius: 40px;
 }
 
@@ -72,4 +80,13 @@
 .games-buttons {
   position: relative;
   bottom: 0;
+}
+
+.sorry-page {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.module-background {
+  background-color: grey;
 }

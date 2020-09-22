@@ -10,18 +10,20 @@ export default function HomeScreen(props) {
   console.log(games)
 
   return (
-    <div>
+    <div className='arcade-container'>
       <h2 className='arcade-title'>Arcade</h2>
-      {games.map((game) => (
-        <React.Fragment key={game.id}>
-          <img src={game.img_url}></img>
-          <Link to={`/games/${game.id}`}>
-            <p> {game.name}</p>
-          </Link>
-          <p>{game.yr}</p>
-          <p>{game.genre}</p>
-        </React.Fragment>
-      ))}
+      <div className='arcade-games'>
+        {games.map((game) => (
+          <div className='oneGame' key={game.id}>
+            <img className='mygame-img' src={game.img_url}></img>
+            <Link className='games-link' to={`/games/${game.id}`}>
+              <p> {game.name}</p>
+            </Link>
+            <p>{game.yr}</p>
+            <p>{game.genre}</p>
+          </div>
+        ))}{' '}
+      </div>
     </div>
   )
 }
