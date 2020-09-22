@@ -1,3 +1,20 @@
 .arcade-title {
   font-family: 'Press Start 2P', cursive;
+  margin: 10px 0 30px 10px;
+}
+
+.games-link {
+  text-decoration: none;
+}
+
+.arcade-container {
+  width: 975px;
+  margin: 0 auto;
+}
+
+.arcade-games {
+  width: 975px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
 }

@@ -29,7 +29,7 @@ export default function GameDetail(props) {
       <GameCard
         game={game}
         currentUser={currentUser}
-        handleDelete={handleDelete}
+        handleDelete={() => handleDelete(game.id)}
         isDelete={isDelete}
         isToggled={isToggled}
         confirmDelete={confirmDelete}

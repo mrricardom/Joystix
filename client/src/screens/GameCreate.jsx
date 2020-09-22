@@ -23,60 +23,67 @@ export default function GameCreate(props) {
   }
 
   return (
-    <div>
+    <div className='add-form-container'>
       <form
+        className='add-form'
         onSubmit={(e) => {
           e.preventDefault()
           createSubmit(formData)
           history.push('/mygames')
         }}
       >
-        <h1> New Game </h1>
-        <label>
+        <h2 className='add-logo'> New Game </h2>
+        <label className='add-label'>
           Image URL:
           <input
             type='text'
             name='img_url'
+            className='add-img'
+            autoFocus
             placeholder='Image URL'
             value={img_url}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='add-label'>
           Rating (1-5):
           <input
             type='text'
             name='rating'
+            className='add-rating'
             placeholder='Rating'
             value={rating}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='add-label'>
           Title:
           <input
             type='text'
             name='name'
+            className='add-title'
             placeholder='Title'
             value={name}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='add-label'>
           Year:
           <input
             type='text'
             name='yr'
+            className='add-yr'
             placeholder='Year'
             value={yr}
             onChange={handleChange}
           />
         </label>
-        <label>
+        <label className='add-label'>
           Genre:
           <input
             type='text'
             name='genre'
+            className='add-genre'
             placeholder='Genre'
             value={genre}
             onChange={handleChange}

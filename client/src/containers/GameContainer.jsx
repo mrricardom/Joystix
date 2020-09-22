@@ -16,20 +16,13 @@ import Games from '../screens/Games'
 
 export default function GameContainer(props) {
   const [games, setGames] = useState([])
-  const [isDelete, setIsDelete] = useState(false)
-  const [isToggled, setIsToggled] = useState(false)
   const history = useHistory()
   const { currentUser } = props
 
   useEffect(() => {
     const fetchGames = async () => {
-      // if (currentUser) {
-      //   const userGamesArray = await getAllUserGames()
-      //   setGames(userGamesArray)
-      // } else {
       const allGamesArray = await getAllGames()
       setGames(allGamesArray)
-      // }
     }
     fetchGames()
   }, [])
@@ -53,11 +46,6 @@ export default function GameContainer(props) {
     setGames((prevState) => prevState.filter((game) => game.id !== id))
   }
 
-  const confirmDelete = () => {
-    setIsDelete(!isDelete)
-    setIsToggled(!isToggled)
-  }
-
   return (
     <Switch>
       <Route path='/games/new'>
@@ -71,18 +59,13 @@ export default function GameContainer(props) {
           currentUser={currentUser}
           updateSubmit={updateSubmit}
           handleDelete={handleDelete}
-          confirmDelete={confirmDelete}
-          isDelete={isDelete}
-          isToggled={isToggled}
+          games={games}
         />
       </Route>
       <Route path='/mygames'>
         <Games
           games={games}
           handleDelete={handleDelete}
-          confirmDelete={confirmDelete}
-          isDelete={isDelete}
-          isToggled={isToggled}
           currentUser={currentUser}
         />
       </Route>
