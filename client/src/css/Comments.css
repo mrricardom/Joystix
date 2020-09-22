@@ -70,3 +70,10 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .comment-type {
+    background-color: #cbcdcf;
+    border: solid #a2dff6;
+  }
+}

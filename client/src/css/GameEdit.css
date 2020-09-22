@@ -85,3 +85,26 @@
     margin-left: 140px;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .edit-form-container {
+    background-color: #cbcdcf;
+    border: solid #a2dff6;
+  }
+
+  .edit-form-container h4 {
+    background-color: #cbcdcf;
+  }
+
+  .edit-form {
+    background-color: #cbcdcf;
+  }
+
+  .edit-label {
+    background-color: #cbcdcf;
+  }
+
+  .edit-img {
+    background-color: #cbcdcf;
+  }
+}
