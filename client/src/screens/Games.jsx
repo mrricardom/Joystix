@@ -25,7 +25,10 @@ export default function Games(props) {
                   <p> Genre: {game.genre}</p>
                   <p> Rating: {game.rating}</p>
                   <div className='games-buttons'>
-                    <Link to={`/games/${game.id}/edit`}>
+                    <Link
+                      className='games-buttons'
+                      to={`/games/${game.id}/edit`}
+                    >
                       <button className='games-edit-button'>Edit</button>
                     </Link>
                     <button

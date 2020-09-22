@@ -17,6 +17,7 @@ label {
 .app-description {
   font-family: 'Roboto Mono', monospace;
   text-align: center;
+  background-color: #cbcdcf;
   font-size: 14px;
   margin: 0 20px 20px 20px;
 }
@@ -47,4 +48,26 @@ label {
   height: 30px;
   width: 104px;
   margin: 30px 0 0 270px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .app-description {
+    width: 800px;
+    font-size: 18px;
+    background-color: #64579c;
+    margin: 0 70px 0 70px;
+  }
+
+  .register-form {
+    margin-left: 180px;
+  }
+  .register-label {
+    font: 18px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .register-button {
+    font-size: 18px;
+  }
 }

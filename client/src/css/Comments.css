@@ -32,6 +32,7 @@
   margin: 0 0 10px 19px;
   height: 80px;
   width: 350px;
+  background-color: #fffafa;
   padding: 0;
 }
 
@@ -40,4 +41,32 @@
   color: white;
   margin: 0 0 10px 310px;
   border-radius: 40px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .messageboard-logo {
+    margin-left: 270px;
+    width: 800px;
+  }
+
+  .add-comment {
+    font-size: 18px;
+    margin-left: 170px;
+  }
+
+  .comments {
+    width: 800px;
+    margin-left: 200px;
+  }
+
+  .comment-type {
+    height: 200px;
+    width: 550px;
+    margin-left: 200px;
+  }
+
+  .comment-submit {
+    margin-left: 695px;
+    font-size: 18px;
+  }
 }
