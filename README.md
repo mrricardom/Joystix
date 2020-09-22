@@ -143,7 +143,7 @@ client
 | Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     1 hr     |     1 hr     |
 | Implement Auth (backend) |    H     |     1 hr      |     1.5 hrs     |     1 hrs     |
 | Create Login and Register pages  |    H     |     .5 hrs      |     .5 hrs     |     .5 hrs     |
-| Implement Auth (frontend) |    H     |     2 hrs      |     TBD     |     TBD     |
+| Implement Auth (frontend) |    H     |     2 hrs      |     2 hrs     |     2 hrs     |
 | Game services, comments services, Game Container, and screens |    H     |     5 hrs      |     7 hrs     |     7 hrs     |
 | Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     1 hr     |     1 hr     |
 | Forum Page displaying comments  |    H     |     1 hr      |     2 hrs     |     2 hrs     |
@@ -154,10 +154,10 @@ client
 | Averaging scores and replacing it with stars  |    L     |     1.5 hrs      |     0 hrs     |     0 hrs     |
 | Favicon  |    L     |     .5 hrs      |     .25 hrs     |     .25 hrs     |
 | Comprehensive Library (adding to collection)  |    L     |     2 hrs      |     0 hrs    |     0 hrs     |
-| Adding "Shopping" Link|    L     |     2 hrs      |     TBD     |     TBD     |
+| Adding "Shopping" Link|    L     |     2 hrs      |     0 hrs     |     0 hrs     |
 | Send to friend link  |    L     |     2 hrs      |     0 hrs     |     0 hrs     |
 | Debugging  |    H     |     6 hrs      |     7 hrs    |     7 hrs     |
-| TOTAL               |          |    42 hrs      |     TBD     |     TBD     |
+| TOTAL               |          |    42 hrs      |     43.2 hrs     |     43.2 hrs     |
 
 <br>
 
@@ -185,7 +185,7 @@ Some Post-MVP goals for Joystix includes:
 ## Code Showcase
 
 > ``` 
- return (
+     return (
     <div className='mygames-body'>
       {currentUser ? (
         <div className='mygames-container'>
