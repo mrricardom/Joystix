@@ -8,8 +8,9 @@ export default function Footer() {
     <footer>
       <p className='footer-p'>
         &copy; Ricardo Martini 2020 Joystick 8-bit image provided by
-        pixelartmaker.com. Linkedin and Github images provided by
-        icons-icons.com.
+        pixelartmaker.com. Mario pixel image courtesy of Nintendo. Linkedin and
+        Github images provided by icons-icons.com. Special thanks to the GA
+        instructional staff for providing help on ths project.
       </p>
       <a
         href={'https://github.com/mrricardom'}
