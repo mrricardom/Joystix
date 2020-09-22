@@ -138,25 +138,25 @@ client
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Project Proposal    |    H     |     4 hrs      |     4 hrs     |    4 hrs    |
-| Project Approval |    H     |     .5 hrs      |     TBD     |     TBD     |
-| Set Up App skeleton and dependencies |    H     |     .5 hrs      |     TBD    |     TBD     |
-| Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     TBD     |     TBD     |
-| Implement Auth (backend) |    H     |     1 hr      |     TBD     |     TBD     |
-| Create Login and Register pages  |    H     |     .5 hrs      |     TBD     |     TBD     |
+| Project Approval |    H     |     .5 hrs      |     3 hrs     |     3 hrs     |
+| Set Up App skeleton and dependencies |    H     |     .5 hrs      |     .45 hrs   |     .45 hrs     |
+| Set Up database, seed data, models, and controllers  |    H     |     2 hrs      |     1 hr     |     1 hr     |
+| Implement Auth (backend) |    H     |     1 hr      |     1.5 hrs     |     1 hrs     |
+| Create Login and Register pages  |    H     |     .5 hrs      |     .5 hrs     |     .5 hrs     |
 | Implement Auth (frontend) |    H     |     2 hrs      |     TBD     |     TBD     |
-| Game services, comments services, Game Container, and screens |    H     |     5 hrs      |     TBD     |     TBD     |
-| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     TBD     |     TBD     |
-| Forum Page displaying comments  |    H     |     1 hr      |     TBD     |     TBD     |
-| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     TBD     |     TBD     |
-| CSS Flexbox  |    H     |     2 hrs      |     TBD     |     TBD     |
-| Mediaqueries  |    H     |     4 hrs      |     TBD     |     TBD     |
-| Advanced CSS  |    M     |     2.5 hrs      |     TBD     |     TBD     |
-| Averaging scores and replacing it with stars  |    L     |     1.5 hrs      |     TBD     |     TBD     |
-| Favicon  |    L     |     .5 hrs      |     TBD     |     TBD     |
-| Comprehensive Library (adding to collection)  |    L     |     2 hrs      |     TBD    |     TBD     |
+| Game services, comments services, Game Container, and screens |    H     |     5 hrs      |     7 hrs     |     7 hrs     |
+| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     1 hr     |     1 hr     |
+| Forum Page displaying comments  |    H     |     1 hr      |     2 hrs     |     2 hrs     |
+| Comprehensive Library + Game Card  |    H     |     1.5 hrs      |     1 hr     |     1 hr     |
+| CSS Flexbox  |    H     |     2 hrs      |     4 hrs     |     4 hrs     |
+| Mediaqueries  |    H     |     4 hrs      |     4 hrs     |     4 hrs     |
+| Advanced CSS  |    M     |     2.5 hrs      |     4.5 hrs     |     4.5 hrs     |
+| Averaging scores and replacing it with stars  |    L     |     1.5 hrs      |     0 hrs     |     0 hrs     |
+| Favicon  |    L     |     .5 hrs      |     .25 hrs     |     .25 hrs     |
+| Comprehensive Library (adding to collection)  |    L     |     2 hrs      |     0 hrs    |     0 hrs     |
 | Adding "Shopping" Link|    L     |     2 hrs      |     TBD     |     TBD     |
-| Send to friend link  |    L     |     2 hrs      |     TBD     |     TBD     |
-| Debugging  |    H     |     6 hrs      |     TBD     |     TBD     |
+| Send to friend link  |    L     |     2 hrs      |     0 hrs     |     0 hrs     |
+| Debugging  |    H     |     6 hrs      |     7 hrs    |     7 hrs     |
 | TOTAL               |          |    42 hrs      |     TBD     |     TBD     |
 
 <br>
@@ -184,8 +184,60 @@ Some Post-MVP goals for Joystix includes:
 
 ## Code Showcase
 
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
+> ``` 
+ return (
+    <div className='mygames-body'>
+      {currentUser ? (
+        <div className='mygames-container'>
+          <h2 className='my-games-title'>My Games</h2>
+          <div className='my-games'>
+            {games
+              .filter((game) => currentUser.id === game.user_id)
+              .map((game) => (
+                <div className='oneGame' key={game.id}>
+                  <img src={game.img_url} className='mygame-img' />
+                  <p className='games-link'>
+                    Title: <Link to={`/games/${game.id}`}>{game.name}</Link>
+                  </p>
+                  <p> Year: {game.yr} </p>
+                  <p> Genre: {game.genre}</p>
+                  <p> Rating: {game.rating}</p>
+                  <div className='games-buttons'>
+                    <Link
+                      className='games-buttons'
+                      to={`/games/${game.id}/edit`}
+                    >
+                      <button className='games-edit-button'>Edit</button>
+                    </Link>
+                    <button
+                      className='games-delete-button'
+                      onClick={() => handleDelete(game.id)}
+                    >
+                      Delete
+                    </button>
+                  </div>
+                </div>
+              ))}
+            <div className='add-button'>
+              <Link to='/games/new'>
+                <button className='add-button-inner'>Add a Game</button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      ) : (
+        <div className='sorry-page'>
+          <img src={Mario} alt='8 bit-Mario' className='Mario' />
+          <h1 className='sorry-text'>
+            Sorry, your games are in another castle! Please log in to see your
+            Games.
+          </h1>
+        </div>
+      )}
+    </div>
+  )
+  ```
 
 ## Code Issues & Resolutions
 
-> Use this section to list of all major issues encountered and their resolution.
+> I ran into issues adding games. Games were displaying via user id, and I didn't take into account a game could have many user ids. I will probably have to do a join table. Another issue I ran into was my auth wasnt working on the deployed site. I had JWT installed in the development.  
