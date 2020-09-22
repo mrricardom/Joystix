@@ -52,3 +52,26 @@
     width: 450px;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .game-card {
+    background-color: #cbcdcf;
+  }
+
+  .game-container p {
+    background-color: #cbcdcf;
+  }
+  .game-container {
+    background-color: #cbcdcf;
+  }
+  .card-img {
+    background-color: #cbcdcf;
+  }
+  .card-buttons {
+    background-color: #cbcdcf;
+  }
+
+  .game-container {
+    border: solid #a2dff6;
+  }
+}

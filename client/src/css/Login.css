@@ -50,3 +50,9 @@
     font-size: 18px;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .input-login {
+    background-color: #cbcdcf;
+  }
+}

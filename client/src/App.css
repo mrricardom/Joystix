@@ -38,3 +38,13 @@ input {
     width: 100vw;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  * {
+    background-color: #fffafa;
+  }
+
+  p {
+    background-color: #cbcdcf;
+  }
+}

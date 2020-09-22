@@ -37,3 +37,9 @@ footer {
     width: 50px;
   }
 }
+
+@media only screen and (min-device-width: 1024px) {
+  .footer-p {
+    background-color: #fffafa;
+  }
+}
