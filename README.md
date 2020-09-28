@@ -24,6 +24,9 @@
 
 <br>
 
+##Project URL 
+https://joystix.netlify.app/
+
 ## MVP
 
 The **Joystix** MVP includes:
