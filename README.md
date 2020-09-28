@@ -24,7 +24,7 @@
 
 <br>
 
-##Project URL 
+## Project URL 
 https://joystix.netlify.app/
 
 ## MVP
